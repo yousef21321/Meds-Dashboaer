@@ -16,7 +16,7 @@ const About = () => {
     buttonLabel: 'Get started',
     imgStart: false,
     img: dashboard,
-    alt: 'car',
+    alt: 'medcines',
     dark: true,
     primary: true,
     darkText: false
@@ -32,7 +32,7 @@ const About = () => {
       <p className={homeObjOne.lightText ? 'section-desc' : 'section-desc dark'}>{homeObjOne.description}</p>
       <img className="nnn" src={homeObjOne.img} alt={homeObjOne.alt} />
 
-      <a href="#" className="section-btn">{homeObjOne.buttonLabel}</a>
+      <a href="/login" className="section-btn">{homeObjOne.buttonLabel}</a>
     </div>
   </div>
   </>
