@@ -1,0 +1,36 @@
+
+.kLancU {
+  background-color: rgb(16, 21, 34);
+  height: 240px;
+  display: flex;
+  width: 22px;
+
+  flex-flow: row;
+  position: inherit;
+  right: 0;
+  bottom: 0;
+  /* background-color: #f5f5f5; */
+  padding: 20px;
+}
+.eAwMnq {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Helvetica;
+}
+/*  */
+.cQIxYe {
+  color: rgb(255, 255, 255);
+  margin: 4px;
+  font-family: monospace;
+}
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #f5f5f5; */
+  padding: 20px;
+}

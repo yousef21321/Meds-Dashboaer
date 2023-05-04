@@ -1,0 +1,81 @@
+.iNkA {
+    max-width: 500px;
+    margin: 100px auto ;
+  }
+  
+  ._1zI6 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  ._2-m7 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .Ges9 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  ._1ns7 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  
+  .MuiInputLabel-outlined {
+    transform: translate(14px, 12px) scale(1);
+  }
+  
+  .MuiOutlinedInput-root:hover .MuiInputLabel-outlined,
+  .MuiOutlinedInput-root.Mui-focused .MuiInputLabel-outlined {
+    transform: translate(14px, 8px) scale(0.75);
+  }
+  
+  .MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, 8px) scale(0.75);
+  }
+  
+  .MuiInputBase-input {
+    font-size: 1rem;
+  }
+  
+  .jss24 {
+    font-size: 0.75rem;
+    line-height: 1;
+    position: absolute;
+    top: -6px;
+    left: 14px;
+    padding: 0 4px;
+    background-color: white;
+  }
+  
+  .MuiButtonBase-root {
+    padding: 0;
+  }
+  
+  .MuiIconButton-root {
+    padding: 6px;
+  }
+  
+  .MuiSvgIcon-root {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .iNkA {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  

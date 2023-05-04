@@ -1,0 +1,57 @@
+.cssheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ulheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .navbar3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .navbar0 {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navbar0:hover {
+    color: #666;
+  }
+  
+  button.navbar0 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  button.navbar0:hover {
+    background-color: #666;
+  }
+  

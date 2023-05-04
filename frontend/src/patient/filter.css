@@ -1,0 +1,68 @@
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Search bar styles */
+  .wqw {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Medicine list styles */
+  .rtrt {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .qwee {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .yty {
+    color: #333;
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .pok {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .wwqdfa {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Optional: Add hover styles for better interactivity */
+  .qwee:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional: Add responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .rtrt {
+      grid-template-columns: 1fr;
+    }
+  }
+  

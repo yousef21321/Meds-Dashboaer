@@ -1,0 +1,42 @@
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .card-medicine-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+  }
+  
+  .card-medicine-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-medicine-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .card-medicine-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .form-control {
+    border-radius: 0;
+  }
+  
+  .btn-dark {
+    border-radius: 0;
+  }
+  
+  .alert {
+    margin-top: 10px;
+    border-radius: 0;
+  }
+  
