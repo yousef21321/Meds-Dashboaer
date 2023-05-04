@@ -2,17 +2,30 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 function UpdatePatient() {
-  const [Accept, setAccept] = useState("");
+  const [isAccepted, setIsAccepted] = useState(false);
   const { id } = useParams();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    if (!Accept) return; // Prevent submitting if accept value is empty
+  const handleAccept = async () => {
     try {
       const response = await fetch(`http://localhost:4000/req/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ Accept }),
+        body: JSON.stringify({ Accept: "Accepted" }),
+      });
+      const data = await response.json();
+      console.log(data); // Check the updated data in console
+      window.location.href = "/list-patient"; // Redirect to home page after successful update
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDecline = async () => {
+    try {
+      const response = await fetch(`http://localhost:4000/req/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ Accept: "Declined" }),
       });
       const data = await response.json();
       console.log(data); // Check the updated data in console
@@ -28,18 +41,29 @@ function UpdatePatient() {
         <div>
           <div className="FHFGHGr">
             <div className="YUUYI">
-              <h2>Update Categ_Meds</h2>
-              <form onSubmit={handleSubmit}>
-                <label htmlFor="accept">Accept:</label>
-                <input
-                  type="text"
-                  id="Accept"
-                  value={Accept}
-                  onChange={(e) => setAccept(e.target.value)}
-                />
-                <button type="submit">Update</button>
-                <Link to="/list-patient">Cancel</Link>
-              </form>
+              <h2>Requests_Meds</h2>
+              {isAccepted ? (
+                <div>
+                  <p>You have accepted.</p>
+                </div>
+              ) : (
+                <div>
+                  <nav>
+                    <ul>
+                      <li>
+                        <button className='btn btn-succes' onClick={handleAccept}>Accept</button>
+                      </li>
+                      <li>
+                        <button  className='btn btn-danger ms-2' onClick={handleDecline}>Decline</button>
+                      </li>
+                    </ul>
+                  </nav>
+                  <form>
+                  
+                    <Link to="/list-patient">Cancel</Link>
+                  </form>
+                </div>
+              )}
             </div>
           </div>
         </div>
