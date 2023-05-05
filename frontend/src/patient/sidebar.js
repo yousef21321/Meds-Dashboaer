@@ -40,6 +40,9 @@ const auth = getAuthUser().name
             <li>
               <Link to={"/History3"}>Request medicine</Link>
             </li>
+            {/* <li>
+              <Link to={"/form"}> Manage Patient</Link>
+            </li> */}
           </ul>
         </div>
       </div>
