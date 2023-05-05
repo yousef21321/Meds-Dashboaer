@@ -3,9 +3,10 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Header from "./Header2";
 import Sidebar from "./sidebar";
+import { getAuthUser } from "../helper/Storage";
 function Student() {
   const [patient, setPatient] = useState([]);
-
+  const auth = getAuthUser().id;
   useEffect(() => {
     axios
       .get("http://localhost:4000/patient/x")
@@ -27,7 +28,7 @@ function Student() {
 
       <div class="container-fluid documentation">
         <div className="row">
-          <Sidebar/>
+          <Sidebar />
           <div className="FHFGHGr">
             <div className="YUUYI">
               <Link to="/creatpatirnt" className="btn btn-success">
@@ -48,7 +49,7 @@ function Student() {
                       <td>{data.name}</td>
                       <td>{data.email}</td>
                       <td>{data.phone}</td>
-                      <td>{data.status}</td>
+                      <td> {auth===data.id ? <p>Active</p> : <p>Not active</p>}</td>
                       <td>
                         <Link
                           to={"/update/" + data.id}
