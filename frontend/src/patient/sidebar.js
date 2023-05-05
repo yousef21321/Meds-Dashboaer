@@ -3,11 +3,12 @@ import "./sidebar.css";
 import { Link } from "react-router-dom";
 import  { useState, useEffect } from 'react';
 import axios from 'axios';
+import { getAuthUser } from "../helper/Storage";
 const Sidebar = () => {
-
-  function Welcome(props) {
-    return <h1>Welcome, {props.name}!</h1>;
-  }
+const auth = getAuthUser().name
+  // function Welcome(props) {
+  //   return <h1>Welcome, {props.auth}!</h1>;
+  // }
   
     const [name, setname] = useState("");
   
@@ -24,7 +25,9 @@ const Sidebar = () => {
             {/* <img src={myImage} alt="My Image" className="logo" /> */}
           </div>
           {/* <h3 className="sidebar-title">Welcome Admin</h3> */}
-          {name ? <Welcome name={name} /> : <p>Loading...</p>}
+          {/* {name ? <Welcome name={name} /> : <p>Loading...</p>} */}
+          <h3 className="sidebar-title">Welcome {auth}</h3>
+
       {/* other registration components */}
           <ul className="sidebar-menu">
             <li>
