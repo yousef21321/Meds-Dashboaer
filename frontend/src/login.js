@@ -28,7 +28,7 @@ function Login() {
         // Middleware for admin And Patient
 
         .then((res) => {
-          if (res.data.name === "Admin_@admin1") {
+          if (res.data.name === "Admin123Aa") {
             navigate("/Admin");
           } else {
             navigate("/Catogary");
