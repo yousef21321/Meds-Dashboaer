@@ -25,8 +25,8 @@ import History3 from "./patient/Historyofmedicine2.js";
 import Accept from "./Admin/Accept.js";
 import Guest from "./Middleware/Guest";
 import Guest1 from "./Middleware/Admin";
-import Catogary from "./patient/catogary.js"
-import Listmeds from "./patient/listmeds.js"
+import Catogary from "./patient/catogary.js";
+import Listmeds from "./patient/listmeds.js";
 // import PrivateRoute from "./product.js";
 
 // import Guest from "./Middleware/Guest.js"
@@ -65,7 +65,6 @@ export const router = createBrowserRouter([
     ],
   },
 
-  
   {
     path: "/Admin",
     element: <Dashboard />,
@@ -80,60 +79,44 @@ export const router = createBrowserRouter([
     path: "/form",
     element: <Form1 />,
   },
-  
-    
-      {
-        path: "/update/:id",
-        element: <Update />,
-      },
 
-      {
-        path: "/managemedicine",
-        element: <Dashboard1 />,
-      },
-      {
-        path: "/form5",
-        element: <Form2 />,
-      },
-
-      {
-        path: "/update-patient3/:id",
-        element: <Update1 />,
-      },
-
-      {
-        path: "/form3",
-        element: <Form3 />,
-      },
-
-      {
-        path: "/update-cat/:id",
-        element: <Updatecat />,
-      },
-      {
-        path: "/delete-patient2",
-        element: <Delete2 />,
-      },
-      {
-        path: "/history_of_patient",
-        element: <History />,
-
-      },
-    
-      {
-        path: "/Catogary",
-        element: <Catogary />,
-      },
- 
   {
-    path: "/patient3/:id",
-    element: <Dashboard3 />,
+    path: "/update/:id",
+    element: <Update />,
+  },
+
+  {
+    path: "/managemedicine",
+    element: <Dashboard1 />,
   },
   {
-    path: "/list-patientpatient/:id",
-    element: <Requestpatient />,
+    path: "/form5",
+    element: <Form2 />,
   },
- 
+
+  {
+    path: "/update-patient3/:id",
+    element: <Update1 />,
+  },
+
+  {
+    path: "/form3",
+    element: <Form3 />,
+  },
+
+  {
+    path: "/update-cat/:id",
+    element: <Updatecat />,
+  },
+  {
+    path: "/delete-patient2",
+    element: <Delete2 />,
+  },
+  {
+    path: "/history_of_patient",
+    element: <History />,
+  },
+
   {
     path: "/list-patient",
     element: <Request_list />,
@@ -146,24 +129,43 @@ export const router = createBrowserRouter([
     path: "/SignUp5",
     element: <SignUp5 />,
   },
+
   {
-    path: "/History2",
-    element: <History2 />,
-  },{
+    path: "/Accept/:id",
+    element: <Accept />,
+  },
+  {
+    path: "/Listmeds/:id",
+    element: <Listmeds />,
+  },
+  // {
+  //   element: <Guest1 />,
+  //   // element: <Guest1 /> ,
+
+  //   children: [
+  {
+    path: "/Catogary",
+    element: <Catogary />,
+  },
+
+  {
+    path: "/patient3/:id",
+    element: <Dashboard3 />,
+  },
+  {
+    path: "/list-patientpatient/:id",
+    element: <Requestpatient />,
+  },
+  {
     path: "/History3",
     element: <History3 />,
   },
-    {
-        path: "/Accept/:id",
-        element: <Accept />,
-      },
-      {
-        path: "/Listmeds/:id",
-        element: <Listmeds />,
-      },
+  {
+    path: "/History2",
+    element: <History2 />,
+  },
 
-
-      
+  // ]},
   {
     path: "*",
     element: <Navigate to={"/"} />,
