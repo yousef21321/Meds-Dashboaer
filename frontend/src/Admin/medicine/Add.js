@@ -85,7 +85,7 @@ const CreateMedicineForm = () => {
                 <div>
                   <label htmlFor="imageUrl">Image URL:</label>
                   <input
-                    type="text"
+                    type="file"
                     id="imageUrl"
                     value={image_url}
                     onChange={(e) => setImageUrl(e.target.value)}
