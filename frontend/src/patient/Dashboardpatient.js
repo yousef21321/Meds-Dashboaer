@@ -112,7 +112,7 @@ const Home = () => {
                         <th>Image</th>
                         <th>catogary</th>
 
-                        <th>Action</th>
+                        <th>price</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -125,6 +125,7 @@ const Home = () => {
                             <img src={medicine.image_url} alt={medicine.name} />
                           </td>
                           <td>{medicine.category_id}</td>
+                          <td>{medicine.price}</td>
 
                           <td>
                             <Link
